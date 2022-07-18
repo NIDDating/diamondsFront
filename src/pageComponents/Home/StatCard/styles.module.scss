@@ -1,0 +1,26 @@
+@import "../../../styles/variables";
+
+.statCard {
+  @extend %CARD-SHADOW;
+  background: $color-white;
+  padding: 16px;
+  border-radius: 4px;
+
+  .top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+
+    .number {
+      @include FONT-32-40;
+    }
+  }
+}
+
+@media screen and (max-width: $bp-2) {
+  .number {
+    //@include FONT-32-40;
+  }
+}

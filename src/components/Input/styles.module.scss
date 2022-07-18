@@ -1,0 +1,18 @@
+@import "../../styles/variables";
+
+.wrap {
+  margin-bottom: 16px;
+
+  .input {
+    @extend %FONT-16-22;
+    border-radius: 4px !important;
+    height: 48px !important;
+    background: $color-light !important;
+    color: $color-dark !important;
+    border: none !important;
+
+    &:hover {
+      background: lighten($color-light, 1%) !important;
+    }
+  }
+}

@@ -1,0 +1,19 @@
+@import "../../styles/variables";
+
+.heading {
+  &.level-1 {
+    @extend %FONT-32-42;
+  }
+
+  &.level-3 {
+    @include FONT-18-24;
+  }
+}
+
+@media screen and (max-width: $bp-2) {
+  .heading {
+    &.level-1 {
+      @include FONT-24-32;
+    }
+  }
+}

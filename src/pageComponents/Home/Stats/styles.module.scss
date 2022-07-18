@@ -1,0 +1,19 @@
+@import "../../../styles/variables";
+
+.stats {
+  margin-bottom: 10px;
+
+  .label {
+    margin-bottom: 16px;
+  }
+
+  .col {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: $bp-3) {
+  .col {
+    margin-bottom: 15px !important;
+  }
+}

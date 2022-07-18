@@ -1,0 +1,25 @@
+@import "../../styles/variables";
+
+.toolbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 64px;
+
+  .dropdown > button {
+    color: $color-text-secondary !important;
+  }
+
+  .dropdownGroup {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+
+    .label {
+      margin-right: 12px;
+      color: $color-text-secondary;
+    }
+  }
+}

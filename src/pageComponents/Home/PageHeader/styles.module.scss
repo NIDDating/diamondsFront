@@ -1,0 +1,39 @@
+@import "../../../styles/variables";
+
+.pageHeader {
+  background: $color-white;
+  margin-bottom: 30px;
+
+  &.paddingBottom {
+    padding-bottom: 16px;
+  }
+
+  .top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 48px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    .date {
+      margin-top: 12px;
+    }
+
+    .dot {
+      margin-right: 8px;
+      margin-left: 8px;
+    }
+  }
+}
+
+@media screen and (max-width: $bp-2) {
+  .pageHeader {
+    padding-bottom: 0 !important;
+
+    .filters {
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,56 @@
+@import "../../styles/variables";
+
+.card {
+  @extend %CARD-SHADOW;
+  background: $color-white;
+  border-radius: 4px;
+  padding: 24px 16px;
+
+  .top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 20px;
+
+    img {
+      width: 64px;
+      height: 64px;
+      object-fit: cover;
+      border-radius: 100%;
+    }
+  }
+
+  .name {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    margin-bottom: 20px;
+  }
+
+  .rows {
+    border-top: solid 1px $color-divider;
+    margin-bottom: 20px;
+
+    .row {
+      height: 48px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: solid 1px $color-divider;
+    }
+  }
+
+  .footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    .time {
+      @include FONT-14-20;
+      color: $color-text-secondary;
+    }
+  }
+}

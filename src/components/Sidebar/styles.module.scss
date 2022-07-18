@@ -1,0 +1,73 @@
+@import "../../styles/variables";
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background: $color-white;
+  width: 33.33%;
+  max-width: 480px;
+  min-width: 320px;
+  z-index: 1000;
+  padding-left: 16px;
+  padding-right: 16px;
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+
+  .header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 75px;
+    border-bottom: solid 1px $color-divider;
+    margin-bottom: 16px;
+
+    .buttonClose {
+      cursor: pointer;
+    }
+  }
+
+  .body {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
+    flex-wrap: nowrap;
+
+    .buttons {
+      flex-shrink: 0;
+      -webkit-flex-shrink: 0;
+      padding-bottom: 16px;
+      margin-left: -8px;
+      margin-right: -8px;
+      margin-top: 32px;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+
+      & > * {
+        flex: 1;
+        margin: 0 8px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $bp-1) {
+  .sidebar {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: $bp-2) {
+  .sidebar {
+    width: 100%;
+    max-width: 100%;
+  }
+}

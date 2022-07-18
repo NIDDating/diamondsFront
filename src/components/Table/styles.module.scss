@@ -1,0 +1,49 @@
+@import "../../styles/variables";
+
+.tableWrap {
+  background: $color-white;
+  border-radius: 4px;
+  margin-bottom: 32px;
+
+  .table {
+    @extend %CARD-SHADOW;
+    margin-bottom: 0;
+
+    tr {
+      th {
+        @extend %FONT-12-16-UPPER;
+        border-top: 0 !important;
+        border-bottom: 0 !important;
+        color: $color-text-secondary;
+      }
+
+      th, td {
+        vertical-align: middle !important;
+        border-left: 0 !important;
+        border-right: 0 !important;
+        padding-left: 16px !important;
+        padding-right: 16px !important;
+        border-color: $color-divider !important;
+      }
+    }
+
+    tbody {
+      tr {
+        cursor: pointer;
+
+        &:hover {
+          background: $color-light !important;
+        }
+      }
+    }
+  }
+
+  .noData {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    min-height: 80px;
+    width: 100%;
+  }
+}

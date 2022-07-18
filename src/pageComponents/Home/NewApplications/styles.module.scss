@@ -1,0 +1,28 @@
+@import "../../../styles/variables";
+
+.wrap {
+  margin-bottom: 40px;
+}
+
+@media screen and (max-width: $bp-2) {
+  .table {
+    tr > td:nth-child(3),
+    tr > th:nth-child(3) {
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: $bp-3) {
+  .table {
+    tr > td:nth-child(2),
+    tr > th:nth-child(2) {
+      display: none;
+    }
+
+    tr > td:last-child,
+    tr > th:last-child {
+      text-align: right;
+    }
+  }
+}

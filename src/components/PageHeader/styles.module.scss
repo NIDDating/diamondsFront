@@ -1,0 +1,63 @@
+@import "../../styles/variables";
+
+.pageHeader {
+  background: $color-white;
+
+  &.paddingBottom {
+    padding-bottom: 16px;
+  }
+
+  .top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 48px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    .left {
+      & > :first-child {
+        margin-right: 24px;
+      }
+
+      .headingLink {
+        cursor: pointer;
+
+        &.active {
+          color: $color-dark;
+        }
+
+        &.inactive {
+          color: $color-text-secondary;
+
+          &:hover {
+            color: lighten($color-text-secondary, 20%);
+          }
+        }
+      }
+    }
+
+    .right {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+      margin-right: -8px;
+
+      & > * {
+        margin: 0 8px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $bp-2) {
+  .pageHeader {
+    padding-bottom: 0 !important;
+
+    .filters {
+      display: none;
+    }
+  }
+}

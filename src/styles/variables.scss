@@ -1,0 +1,73 @@
+%FONT-16-22 {
+  font-size: 16px;
+  line-height: 22px;
+}
+
+@mixin FONT-24-32 {
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 600;
+}
+
+@mixin FONT-18-24 {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 600;
+}
+
+@mixin FONT-40-48 {
+  font-size: 40px;
+  line-height: 48px;
+  font-weight: 600;
+}
+
+@mixin FONT-32-40 {
+  font-size: 32px;
+  line-height: 40px;
+  font-weight: 600;
+}
+
+@mixin FONT-14-20 {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+}
+
+@mixin FONT-12-16 {
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 400;
+}
+
+%FONT-32-42 {
+  font-size: 32px;
+  line-height: 42px;
+  font-weight: 600;
+}
+
+%FONT-12-16-UPPER {
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+%CARD-SHADOW {
+  box-shadow: 0px 1px 2px 0px #21252A0F;
+}
+
+$color-light: #F2F3F5;
+$color-primary: #E6B43F;
+$color-text-secondary: #909294;
+$color-primary-light: lighten($color-primary, 35%);
+$color-white: white;
+$color-dark: #21252A;
+$color-divider: #E3E4E5;
+$color-light-2: #E8E9EB;
+$color-light-3: darken($color-light-2, 5%);
+$color-success: #3AB454;
+$color-info: #4291EE;
+
+$bp-0: 1200px;
+$bp-1: 992px;
+$bp-2: 768px;
+$bp-3: 576px;

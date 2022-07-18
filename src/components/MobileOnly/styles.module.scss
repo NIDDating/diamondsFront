@@ -1,0 +1,13 @@
+@import "../../styles/variables";
+
+@media screen and (max-width: $bp-2) {
+  .mobileOnly {
+    display: block;
+  }
+}
+
+@media screen and (min-width: $bp-2 + 1) {
+  .mobileOnly {
+    display: none;
+  }
+}
